@@ -29,10 +29,10 @@ public class HelloWorld {
 	i = j>>1; //带符号右移
 	System.out.println(Integer.toBinaryString(i));
 	
-	//Scanner s = new Scanner(System.in);
-	//int a = s.nextInt();
-	//int c = s.nextInt();
-	//System.out.println(a+" "+c);
+	Scanner s = new Scanner(System.in);
+	int a = s.nextInt();
+	int c = s.nextInt();
+	System.out.println(a+" "+c);
 	//BMI计算
 	System.out.println("BMI程序运行:");
 	Scanner you = new Scanner(System.in);
@@ -45,17 +45,8 @@ public class HelloWorld {
 	int money = 1;
 	for(int z = 1;z<=10;z++)
 	{
-		System.out.println("乞丐要"+money+"在第"+z+"天");
 		money *= 2;
-	}
-	for(i=1;i<=100;i++)
-	{
-		if(i%3 == 0||i%5 == 0)
-		{
-			continue;
-		}
-		System.out.println(i);
-	
+		System.out.println("乞丐要"+money+"在第"+z+"天");
 	}
 	}
 }

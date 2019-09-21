@@ -32,7 +32,7 @@ public class HelloWorld {
 	//Scanner s = new Scanner(System.in);
 	//int a = s.nextInt();
 	//int c = s.nextInt();
-	//System.out.println(a+" "+c);
+	System.out.println(a+" "+c);
 	//BMI计算
 	System.out.println("BMI程序运行:");
 	Scanner you = new Scanner(System.in);

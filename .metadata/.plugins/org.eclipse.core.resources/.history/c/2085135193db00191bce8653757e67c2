@@ -29,33 +29,18 @@ public class HelloWorld {
 	i = j>>1; //带符号右移
 	System.out.println(Integer.toBinaryString(i));
 	
-	//Scanner s = new Scanner(System.in);
-	//int a = s.nextInt();
-	//int c = s.nextInt();
-	//System.out.println(a+" "+c);
+	Scanner s = new Scanner(System.in);
+	int a = s.nextInt();
+	int c = s.nextInt();
+	System.out.println(a+""+c\n);
 	//BMI计算
-	System.out.println("BMI程序运行:");
+	System.out.println("BMI程序运行:"\n);
 	Scanner you = new Scanner(System.in);
-	System.out.println("请输入身高(m):");
+	System.out.println("请输入身高(m):"\n);
 	float length = you.nextFloat();
-	System.out.println("请输入体重(kg):");
+	System.out.println("请输入体重(kg):"\n);
 	float weight = you.nextFloat();
 	float bmi = weight/(length*length);
 	System.out.println("bmi "+bmi);
-	int money = 1;
-	for(int z = 1;z<=10;z++)
-	{
-		System.out.println("乞丐要"+money+"在第"+z+"天");
-		money *= 2;
-	}
-	for(i=1;i<=100;i++)
-	{
-		if(i%3 == 0||i%5 == 0)
-		{
-			continue;
-		}
-		System.out.println(i);
-	
-	}
-	}
+
 }
