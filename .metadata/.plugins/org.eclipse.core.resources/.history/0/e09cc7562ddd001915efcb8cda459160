@@ -57,7 +57,7 @@ public class Synthesize_Practise1 {
 				{
 					temp = a[k+1];
 					a[k+1] = a[k];
-					a[k] = temp;
+					a[k] = a[k+1];
 				}
 			}
 		}
