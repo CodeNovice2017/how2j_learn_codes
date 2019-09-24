@@ -42,7 +42,6 @@ public class Synthesize_Practise1 {
 //				System.out.println(k);
 //			}
 //		}
-		//数组排序
 		int[] a;
 		int temp;
 		int min;
@@ -69,7 +68,7 @@ public class Synthesize_Practise1 {
 		{
 			System.out.println(a[i]);
 		}
-		System.out.println("数组排序完成!\n");
+		System.out.println("数组排序完成!");
 		//数组反转
 		int[] b = new int[5];
 		for(int i = 0;i<5;i++)
@@ -80,46 +79,22 @@ public class Synthesize_Practise1 {
 		{
 			System.out.println(b[i]);
 		}
-		System.out.println("翻转后的数组为:\n");
-		for(int j = 0,k = b.length-1;k>0&&j<b.length;j++,k--)
+		System.out.println("翻转后的数组为:");
+		for(int j = 0;j<b.length;j++)
 		{
+			for(int k = b.length-1;k>0;k--)
+			{
 				if(k!=j)
 				{
 					temp = b[j];
 					b[j] = b[k];
 					b[k] = temp;
 				}
+			}
 		}
 		for(int i = 0;i<5;i++)
 		{
 			System.out.println(b[i]);
 		}
-		//数组选择排序
-		Scanner s = new Scanner(System.in);
-		System.out.println("请输入一个待排序数组大小:\n");
-		int arraylength = s.nextInt();
-		int[] a1 = new int[arraylength];
-		for(int i = 0;i<arraylength;i++)
-		{
-			a1[i] = (int)(Math.random()*100);
-		}
-		for(int j = 0;j<arraylength;j++)
-		{
-			min = a1[j];
-			for(int k = j;k<arraylength;k++)
-			{
-				if(a1[k]<min)
-				{
-					temp = min;
-					min = a1[k];
-					a1[k] = temp;
-				}
-			}
-		}
-		for(int i = 0;i<arraylength;i++)
-		{
-			System.out.println(a1[i]);
-		}
-		System.out.println("选择排序后的数组为:\n");
 	}	
 }
