@@ -156,7 +156,7 @@ public class Synthesize_Practise1 {
 			}
 		}
 		int min = a1[0][0];
-		int k=0,p=0;
+		int k,p;
 		for(int i = 0;i<5;i++)
 		{
 			for(int j = 0;j<5;j++)
