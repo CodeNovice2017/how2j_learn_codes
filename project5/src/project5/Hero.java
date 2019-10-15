@@ -1,0 +1,42 @@
+package project5;
+
+public class Hero {
+	String name;
+	
+	float hp;
+	
+	float Armor;
+	
+	int moveSpeed;
+	
+	public Hero()
+	{
+		System.out.println("????????????????,??????ù?????");
+	}
+	public Hero(String name){
+		System.out.println("??????????????");
+		this.name = name;
+	}
+
+	//????????????
+	public Hero(String name,float hp)
+	{
+		this(name);
+		this.hp = hp;
+	}
+
+	public Hero(String name,float hp,int moveSpeed,float Armor)
+	{
+		this(name,hp);
+		this.moveSpeed = moveSpeed;
+		this.Armor = Armor;
+
+	}
+	public void showAddressInMemory(){
+		System.out.println("???this????????????: "+this);
+	}
+	public void setName1(String name)
+	{
+		this.name = name;
+	}
+}

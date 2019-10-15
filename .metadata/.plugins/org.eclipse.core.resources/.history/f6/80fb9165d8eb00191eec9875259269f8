@@ -1,0 +1,34 @@
+package project5;
+
+public class Hero {
+	String name;
+	
+	float hp;
+	
+	float Armor;
+	
+	int moveSpeed;
+	
+	public Hero(){
+		System.out.println("实例化一个对象的时候,必然调用构造方法");
+	}
+	public Hero(String heroname){
+		name = heroname;
+	}
+	//构造方法的重载
+	public Hero(String heroname,float herohp){
+		name = heroname;
+		hp = herohp;
+	}
+	public Hero(String heroname,float heroHP,float heroArmor,int heroMoveSpeed)
+	{
+		name = heroname;
+		hp = heroHP;
+		Armor = heroArmor;
+		moveSpeed = heroMoveSpeed;
+		
+	}
+	public void showAddressInMemory(){
+		System.out.println("打印this看到的虚拟地址: "+this);
+	}
+}

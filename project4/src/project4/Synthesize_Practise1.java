@@ -1,6 +1,8 @@
 package project4;
 
 import java.util.Scanner;
+import java.util.Arrays;
+
 
 public class Synthesize_Practise1 {
 
@@ -147,28 +149,61 @@ public class Synthesize_Practise1 {
 //			System.out.println(a[k]);
 //		}
 		//合并数组
-		int[][] a1 = new int[5][5];
-		for(int i = 0;i<5;i++)
+//		int[][] a1 = new int[5][5];
+//		for(int i = 0;i<5;i++)
+//		{
+//			for(int j = 0;j<5;j++)
+//			{
+//				a1[i][j] = (int)(Math.random()*100);
+//			}
+//		}
+//		int min = a1[0][0];
+//		int k=0,p=0;
+//		for(int i = 0;i<5;i++)
+//		{
+//			for(int j = 0;j<5;j++)
+//			{
+//				if(a1[i][j] < min)
+//				{
+//					min = a1[i][j];
+//					k = i;
+//					p = j;
+//				}
+//			}
+//		}
+//		System.out.println(min+" "+k+" "+p);
+//	int a[] = new int[] {18,62,68,82,65,9};
+//	int b[] = Arrays.copyOfRange(a,0,3);
+//	for(int i = 0;i<b.length;i++)
+//	{
+//		System.out.println(a[i]);
+//	}
+//	String content = Arrays.toString(a);
+//	System.out.println(content);
+//	Arrays.sort(a);
+//	System.out.println(Arrays.toString(a));
+//	System.out.println(Arrays.binarySearch(a,62));
+//	System.out.println(Arrays.equals(a,b));
+//	int a2[] = new int[10];
+//	Arrays.fill(a2,5);
+//	System.out.println(Arrays.toString(a2));
+	
+	//Practise
+	int b2[][] = new int[5][8];
+	for(int i = 0;i<5;i++)
+	{
+		for(int j = 0;j<8;j++)
 		{
-			for(int j = 0;j<5;j++)
-			{
-				a1[i][j] = (int)(Math.random()*100);
-			}
+			b2[i][j] = (int)(Math.random()*100);
 		}
-		int min = a1[0][0];
-		int k=0,p=0;
-		for(int i = 0;i<5;i++)
-		{
-			for(int j = 0;j<5;j++)
-			{
-				if(a1[i][j] < min)
-				{
-					min = a1[i][j];
-					k = i;
-					p = j;
-				}
-			}
-		}
-		System.out.println(min+" "+k+" "+p);
-	}	
+	}
+	String contentb2 = Arrays.toString(b2);
+	System.out.println("未排序前:"+contentb2);
+	for(int z = 0;z<5;z++)
+	{
+		Arrays.sort(b2[z]);
+	}
+	contentb2 = Arrays.toString(b2);
+	System.out.println("已排序后:"+contentb2);
+	}
 }

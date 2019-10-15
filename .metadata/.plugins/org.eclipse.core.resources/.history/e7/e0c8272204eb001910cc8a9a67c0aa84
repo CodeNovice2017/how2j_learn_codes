@@ -1,0 +1,15 @@
+package project5;
+
+public class Hero {
+	String name;
+	
+	float hp;
+	
+	float Armor;
+	
+	int moveSpeed;
+	
+	public Hero(){
+		System.out.println("实例化一个对象的时候,必然调用构造方法");
+	}
+}
