@@ -15,4 +15,9 @@ public class ADAPHero extends LolHero implements AP,AD,Mortal{
     public void die(){
         System.out.println("物理魔法英雄死亡");
     }
+
+    public void attack(){
+        magicAttack();
+    }
+
 }

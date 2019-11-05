@@ -144,24 +144,24 @@ public class Hero {
 
         //对象类型转换
         //可行情况
-        ADHero ad = new ADHero();
-        LolHero h1 = new LolHero();
-
-        //未将子类转换为父类时，总是假
-        System.out.println(h1 instanceof ADHero);
-
-        h1 = ad;
-
-        //子类转换为父类时，总是真
-        System.out.println(h1 instanceof ADHero);
-
-        ad = (ADHero)h1;
+//        ADHero ad = new ADHero();
+//        LolHero h1 = new LolHero();
+//
+//        //未将子类转换为父类时，总是假
+//        System.out.println(h1 instanceof ADHero);
+//
+//        h1 = ad;
+//
+//        //子类转换为父类时，总是真
+//        System.out.println(h1 instanceof ADHero);
+//
+//        ad = (ADHero)h1;
         //不行的情况
-        LolHero h2 = new LolHero();
+//        LolHero h2 = new LolHero();
         ADHero ad2 = new ADHero();
         Support sup1 = new Support();
-        h2 = sup1; //把辅助英雄当成英雄 把子类转父类
-        System.out.println(h2); //输出h2的地址和sup1的地址是一样的
+//        h2 = sup1; //把辅助英雄当成英雄 把子类转父类
+//        System.out.println(h2); //输出h2的地址和sup1的地址是一样的
         System.out.println(sup1);
         //ad2 = (ADHero)h2; //把指向support对象的h2 转换为ad2引用的类型ADHero
 
@@ -187,8 +187,8 @@ public class Hero {
         System.out.println(ad4 instanceof ADHero);
 
         //方法的重写
-        Item i = new Item();
-        i.effect();
+//        Item i = new Item();
+//        i.effect();
 
         LifePotion lp = new LifePotion();
         lp.effect();
@@ -217,8 +217,57 @@ public class Hero {
 //        实例化一个ADHero(), 其构造方法会被调用
 //        其父类的构造方法也会被调用 并且是父类构造方法先调用
 //        子类构造方法会默认调用父类的 无参的构造方法
-        new LolHero();
-        new ADHero();
+//        new LolHero();
+        ADHero h4 = new ADHero();
+//        new ADHero("德莱文");
+
+        System.out.println(h4.toString());
+        System.out.println(h4);
+
+        System.out.println(h4.getMoveSpeed());
+        System.out.println(h4.getMoveSpeed2());
+
+        //垃圾回收检测
+//        LolHero h5 ;
+//        for(int ii = 0; ii< 100000;ii++)
+//        {
+//            h5 = new LolHero();
+//        }
+
+        //final
+//        final LolHero h5 = new LolHero();
+
+        //匿名类
+        LolHero garen2 = new LolHero(){
+            public void attack(){
+                System.out.println("新的攻击手段:");
+            }
+        };
+        garen2.attack();
+        System.out.println(garen2);
+        //本地类
+        int demage = 5;
+        class AnonymousHero extends LolHero{
+            int demage;
+            public AnonymousHero(int demage)
+            {
+                this.demage = demage;
+            }
+            public void attack(){
+                demage = 10;
+                System.out.printf("新的攻击手段,造成%d点伤害",this.demage);
+            }
+            LolHero h3 = new AnonymousHero(demage);
+        }
+
+        Item item1 = new Item(){
+            public boolean disposable(){
+                return false;
+            }
+        };
+
+        ADHero katelin = new ADHero();
+        katelin.attack();
 
     }
 }

@@ -2,25 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ebbd286-1ad5-4433-be40-7bb385f1e63e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/charactor/AD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/charactor/ADAPHero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/charactor/AP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/charactor/APHero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/charactor/GiantDragon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/charactor/Healer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/charactor/Mortal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/charactor/SmallDragon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/charactor/Support.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/property/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/property/LifePotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/property/MagicPotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project8/project8.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project7/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project7/Hero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project7/charactor/ADAPHero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project7/charactor/ADAPHero.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project7/charactor/ADHero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project7/charactor/ADHero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project7/charactor/APHero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project7/charactor/APHero.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project7/charactor/LolHero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project7/charactor/LolHero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project7/charactor/Support.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project7/charactor/Support.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project7/property/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project7/property/Item.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/charactor/ADAPHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/charactor/ADAPHero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/charactor/ADHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/charactor/ADHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/charactor/AP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/charactor/AP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/charactor/APHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/charactor/APHero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/charactor/LolHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/charactor/LolHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/charactor/Support.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/charactor/Support.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/property/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/property/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/property/LifePotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/property/LifePotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/property/MagicPotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/property/MagicPotion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/property/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/property/Weapon.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,7 +113,12 @@
       <workItem from="1571535452244" duration="6583000" />
       <workItem from="1571562673094" duration="1099000" />
       <workItem from="1571642083846" duration="5787000" />
-      <workItem from="1571738261601" duration="13534000" />
+      <workItem from="1571738261601" duration="18237000" />
+      <workItem from="1571887689212" duration="1276000" />
+      <workItem from="1572059696312" duration="1223000" />
+      <workItem from="1572322302047" duration="8534000" />
+      <workItem from="1572855873995" duration="3179000" />
+      <workItem from="1572914529784" duration="7577000" />
     </task>
     <servers />
   </component>

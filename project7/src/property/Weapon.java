@@ -1,6 +1,6 @@
 package property;
 
-public class Weapon {
+public class Weapon extends Item{
     private Weapon(){}
     private static Weapon instance;
     public static Weapon getInstance(){
@@ -9,6 +9,9 @@ public class Weapon {
             instance = new Weapon();
         }
         return instance;
+    }
+    public boolean disposable(){
+        return false;
     }
 
 }
