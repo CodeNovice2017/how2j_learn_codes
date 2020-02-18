@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    <bean name="c" class="com.how2java.pojo.Category">
+        <property name="name" value="yyy" />
+    </bean>
+    <bean name="p" class="com.how2java.pojo.Production">
+        <property name="name" value="product1" />
+        <property name="category" ref="c" />
+    </bean>
+<!--&lt;!&ndash;    声明业务对象&ndash;&gt;-->
+<!--    <bean name="s" class="com.how2java.service.ProductService">-->
+<!--    </bean>-->
+<!--&lt;!&ndash;    声明日志切面&ndash;&gt;-->
+<!--    <bean id="loggerAspect" class="com.how2java.aspect.LoggerAspect" />-->
+<!--&lt;!&ndash;    通过aop:config把业务对象与辅助功能编织在一起。&ndash;&gt;-->
+<!--    <aop:config>-->
+<!--        &lt;!&ndash;    指定右边的核心业务功能&ndash;&gt;-->
+<!--&lt;!&ndash;        第一个*表示返回任意类型,com.how2java.service.ProductService.*表示包名以 com.how2java.service.ProductService 开头的类的任意方法,(..)参数是任意数量和类型&ndash;&gt;-->
+<!--        <aop:pointcut id="loggerCutpoint" expression="execution(* com.how2java.service.ProductService.*(..))"/>-->
+<!--&lt;!&ndash;    指定左边的辅助功能&ndash;&gt;-->
+<!--        <aop:aspect id="logAspect" ref="loggerAspect">-->
+<!--            <aop:around pointcut-ref="loggerCutpoint" method="log" />-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
+<!--    <bean name="s1" class="com.how2java.service.TestJDBCService">-->
+
+<!--    </bean>-->
+<!--    <bean id="performanceAspect" class="com.how2java.aspect.PerformanceAspect" />-->
+<!--    <aop:config>-->
+<!--        <aop:pointcut id="performanceCutpoint" expression="execution(* com.how2java.service.TestJDBCService.*(..))" />-->
+<!--        <aop:aspect id="perAspect" ref="performanceAspect">-->
+<!--            <aop:around pointcut-ref="performanceCutpoint" method="log" />-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
+    <context:component-scan base-package="com.how2java.service" />
+    <context:component-scan base-package="com.how2java.aspect" />
+    <aop:aspectj-autoproxy/>
+</beans>
